@@ -1,9 +1,12 @@
 {
-  "environments": {
-    "test": {
-      "addons":[
-         "heroku-postgresql"
-      ]
-    }
-  }
+	"environments": {
+		"test": {
+			"addons":[
+				"heroku-postgresql"
+			]
+		},
+		"buildpacks": [
+			{ "url": "https://github.com/heroku/heroku-buildpack-ruby#schneems/fx-schema-structure" }
+		]
+	}
 }
